@@ -1,0 +1,55 @@
+@charset "utf-8";
+
+/* 
+    Author: Jeffrey Kuhn
+    Date: 8-23-19
+*/
+
+
+/* Printing Styles */
+
+ @page {
+    size: 8.5in 11in;
+    margin: 0.5;
+}
+
+/* Printed font */
+
+h1{
+    font-size: 20pt;
+}
+
+p{
+    font-size: 12pt;
+}
+
+ul{
+    list-style-type: disc;
+    margin-left: 0.5in;
+}
+
+/* Image Printed */
+
+main img {
+    margin: 0.5in;
+    width: 50%;
+}
+
+/* Nav display */
+
+nav {
+    display: none;
+}
+
+/* Footer display */
+
+footer {
+    text-align: center;
+}
+
+/* Hyperlink Display */
+
+a {
+    color: black;
+    text-decoration: none;
+}

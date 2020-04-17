@@ -1,0 +1,270 @@
+@charset "utf-8";
+
+/*
+
+Original Author: Jeffrey Kuhn
+Date Created: 8-22-19
+Version: 4 (First Live Version)
+Date Last Modified: 9-12-19
+Modified by: Jeffrey Kuhn
+Modification log: Added CSS for media, changed margins for h1 and p
+Adjusted font sizes in the body, nav and table
+ 
+*/
+
+
+/* Body Styles */
+
+html{
+    width: 100%;
+}
+
+body {
+    background: white;
+    font-size: 1.1em;
+    width: 100%;
+    margin: 0px;
+}
+
+/* Header Style*/
+
+header {
+    background: linear-gradient(to left, rgb(107, 245, 61), white);
+    width: 100%;
+}
+
+header h1 {
+    padding-top: 2em;
+    padding-bottom: 2em;
+}
+
+h1{
+    padding-top: 4em;
+}
+h1#contactHeader{
+    padding-top: 1em;
+}
+
+/* Nav Style */
+
+nav {
+    background: rgb(107, 245, 61);
+}
+
+nav ul li{
+    min-height: 1em;
+    font-size: 1.6em;
+    list-style-type: none;
+}
+nav img {
+    height: 2em;
+    width: 2em;
+}
+
+/* Image styling */
+
+main img{
+    width: 20em;
+    height: 15em;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Main Style */
+
+main p {
+    font-size: 1.7em;
+    padding-left: 1em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    margin-top: 2em;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
+}
+
+h1{
+    margin-left: 2%;
+}
+
+/* Footer Style */
+
+footer {
+    background: rgb(107, 245, 61);
+    text-align: center;
+    width: 100%;
+    margin-top: 2em;
+    padding-top: 1em;
+    padding-bottom: 1em;
+}
+
+footer img {
+    height: 50px;
+    width: 50px;
+    margin-left: .5em;
+    margin-right: .5em;
+}
+
+/* Table Style*/
+
+table {
+    border-collapse: collapse;
+    font-size: 0.9em;
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 90%;
+}
+table th, table td {
+    border: 1px solid black;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+    padding-top: 1em;
+    padding-bottom: 1em;
+    padding-right: .5em;
+    padding-left: .5em;
+}
+table th {
+    background-color: rgb(107, 245, 61);
+}
+table td {
+    background-color: rgb(182, 251, 182);
+}
+table caption {
+    caption-side: bottom;
+    text-align: left;
+    width: 100%;
+    background: rgb(107, 245, 61);
+}
+
+table.employeeTable {
+    margin-bottom: 5em;
+}
+
+/* List Style */
+li ul{
+    list-style-type: none;
+    margin-left: 5em;
+}
+
+/* Form Style */
+
+form {
+    margin-right: 5%;
+    margin-left: 5%;
+    width: 90%;
+}
+
+div.formRow {
+    margin: 5px;
+    padding-bottom: 5px;
+    padding-top: 5px;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-flow: row wrap;
+    flex-flow: row wrap;
+}
+
+label {
+    font-size: 1em;
+    margin-right: 1em;
+}
+
+textarea {
+    height: 100px;
+    width: 50%;
+}
+
+div#send {
+    margin-left: 40%;
+    margin-right: 40%;
+    width: 20%;
+}
+
+div#send input{
+    font-size: 1.3em;
+}
+
+/* Media Style */
+
+audio {
+    width: 30%;
+    margin-left: 35%;
+    margin-right: 35%;
+}
+
+/* ===============================
+    Mobile Format: 0px to 480px
+   ===============================
+*/
+
+@media only screen and (max-width: 480px) {
+
+    /* Navicon Styel */
+
+    a#navicon{
+        display: block;
+    }
+    nav ul {
+        display: none;
+    }
+
+    li {
+        margin-top: .5em;
+        margin-bottom: .5em;
+    }
+    li a {
+        text-decoration: none;
+    }
+
+    a#navicon:hover+ul, nav ul:hover {
+        display: block;
+    }
+
+}
+
+/* ===============================
+    Desktop Format: 480px or greater
+   ===============================
+*/
+
+@media only screen and (min-width: 481px) {
+
+    /* HTML, Body and Main Style */
+    html {
+        background: url('../images/Park-Wallpaper-24-1280x1024.jpg') center center / cover no-repeat fixed;
+    }
+
+    body {
+        min-width: 200px;
+        max-width: 1024px;
+        margin: auto;
+        box-shadow: rgb(51, 51, 51) 10px 0px 15px,
+                    rgb(51, 51, 51) -10px 0px 15px;
+    }
+
+    main p {
+        margin: 1em;
+    }
+
+    /* Nav Style */
+
+    nav ul li {
+        display: inline;
+        margin-right: 1em;
+        margin-left: 1em;
+        padding-top: 1em;
+        padding-bottom: 1em;
+    }
+
+    a#navicon{
+        display: none;
+    }
+
+    /* Image Desktop Styling*/
+
+    main img {
+    width: 30em;
+    height: 20em;
+    }
+}
